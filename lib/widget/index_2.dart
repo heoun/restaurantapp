@@ -7,7 +7,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:restaurant_app/pallete.dart';
+import 'package:restaurant_app/config/theme.dart';
 import 'package:restaurant_app/widget/recommended.dart';
 import 'package:unicons/unicons.dart';
 
@@ -18,7 +18,7 @@ class IndexDua extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: colorSiji,
+      backgroundColor: colorOne,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -34,7 +34,7 @@ class IndexDua extends StatelessWidget {
                       alignment: Alignment.center,
                       height: 40,
                       decoration: ShapeDecoration(
-                        color: colorTelu,
+                        color: colorThree,
                         shape: CircleBorder(),
                       ),
                       child: IconButton(
@@ -53,7 +53,7 @@ class IndexDua extends StatelessWidget {
                       width: 65,
                       height: 35,
                       decoration: BoxDecoration(
-                        color: colorLoro,
+                        color: colorTwo,
                         borderRadius: BorderRadiusDirectional.circular(10),
                       ),
                       child: Row(
@@ -61,13 +61,13 @@ class IndexDua extends StatelessWidget {
                         children: [
                           Icon(
                             UniconsLine.shopping_cart,
-                            color: colorSiji,
+                            color: colorOne,
                           ),
                           SizedBox(width: 2),
                           Text(
                             '9',
                             style: GoogleFonts.poppins(
-                              color: colorSiji,
+                              color: colorOne,
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
                             ),
@@ -90,7 +90,7 @@ class IndexDua extends StatelessWidget {
                     topLeft: Radius.circular(35),
                     topRight: Radius.circular(35),
                   ),
-                  color: colorTelu,
+                  color: colorThree,
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -115,7 +115,7 @@ class IndexDua extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 30, left: 20, right: 20),
                       child: Text(
-                        "${gridContentRecommended.elementAt(1)["subjudul"]}",
+                        "${gridContentRecommended.elementAt(1)["subtitle"]}",
                         style: GoogleFonts.poppins(
                           fontSize: 24,
                           fontWeight: FontWeight.w600,
@@ -125,7 +125,7 @@ class IndexDua extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 20, right: 20),
                       child: Text(
-                        "${gridContentRecommended.elementAt(1)["harga"]}",
+                        "${gridContentRecommended.elementAt(1)["price"]}",
                         style: GoogleFonts.poppins(
                           color: Colors.deepOrange,
                           fontSize: 26,
@@ -146,7 +146,7 @@ class IndexDua extends StatelessWidget {
                               height: 45,
                               width: 105,
                               decoration: BoxDecoration(
-                                color: colorTelu,
+                                color: colorThree,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Row(
@@ -175,7 +175,7 @@ class IndexDua extends StatelessWidget {
                               height: 45,
                               width: 145,
                               decoration: BoxDecoration(
-                                color: colorTelu,
+                                color: colorThree,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Row(
@@ -229,7 +229,7 @@ class IndexDua extends StatelessWidget {
                                   alignment: Alignment.center,
                                   width: 75,
                                   decoration: BoxDecoration(
-                                    color: colorLoro,
+                                    color: colorTwo,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Text(
@@ -243,7 +243,7 @@ class IndexDua extends StatelessWidget {
                                   alignment: Alignment.center,
                                   width: 75,
                                   decoration: BoxDecoration(
-                                    color: colorLoro,
+                                    color: colorTwo,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Text(
@@ -257,7 +257,7 @@ class IndexDua extends StatelessWidget {
                                   alignment: Alignment.center,
                                   width: 75,
                                   decoration: BoxDecoration(
-                                    color: colorLoro,
+                                    color: colorTwo,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Text(
@@ -271,7 +271,7 @@ class IndexDua extends StatelessWidget {
                                   alignment: Alignment.center,
                                   width: 75,
                                   decoration: BoxDecoration(
-                                    color: colorLoro,
+                                    color: colorTwo,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Text(
@@ -285,7 +285,7 @@ class IndexDua extends StatelessWidget {
                                   alignment: Alignment.center,
                                   width: 75,
                                   decoration: BoxDecoration(
-                                    color: colorLoro,
+                                    color: colorTwo,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: Text(
@@ -347,7 +347,7 @@ class IndexDua extends StatelessWidget {
                             height: 50,
                             width: size.width * 0.53,
                             decoration: BoxDecoration(
-                                color: colorSiji,
+                                color: colorOne,
                                 borderRadius: BorderRadius.circular(15)),
                             child: Padding(
                               padding: const EdgeInsets.only(left: 25, right: 25),
@@ -362,7 +362,7 @@ class IndexDua extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    '${gridContentRecommended.elementAt(1)['harga']}',
+                                    '${gridContentRecommended.elementAt(1)['price']}',
                                     style: GoogleFonts.poppins(
                                       fontSize: 18,
                                       color: Colors.white,

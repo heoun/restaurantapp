@@ -33,6 +33,30 @@ flutter create .
 flutter run
 ```
 
+
+4. Issue in WSL with Chrome_Executable so need to run
+```
+export CHROME_EXECUTABLE=/snap/bin/chromium
+```
+
+5. Notes
+-Add pubspec.yaml for libraries
+- You can do ```flutter pub get```
+- Root has the bottom navigation bar for apps
+- lib/pallete.dart has color scheme
+- gnav.dart has navigation? need to investigate
+- gbutton.dart has actually icons
+
+
+
+
+
+
+
+
+
+
+
 ## Don't Forget to
 
 - Star the Repository [⭐]

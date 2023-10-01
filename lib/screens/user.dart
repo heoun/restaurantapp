@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:restaurant_app/pallete.dart';
+import 'package:restaurant_app/config/theme.dart';
 
 class UserProfileScreen extends StatelessWidget {
   const UserProfileScreen({super.key});
@@ -11,10 +11,10 @@ class UserProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'User Profile',
+        'User Profile s',
         style: GoogleFonts.poppins(
           fontSize: 33,
-          color: colorSiji,
+          color: colorOne,
           fontWeight: FontWeight.w400,
         ),
       ),

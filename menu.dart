@@ -60,14 +60,14 @@ class _MenuScreenState extends State<MenuScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colorTelu,
+      backgroundColor: colorThree,
       extendBodyBehindAppBar: true,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(0),
         child: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
-          brightness: Brightness.light,
+          // brightness: Brightness.light,
         ),
       ),
       body: CustomBody(),
@@ -104,7 +104,7 @@ class _MenuScreenState extends State<MenuScreen> {
                   width: size.width,
                   height: 195,
                   decoration: BoxDecoration(
-                    color: colorSiji,
+                    color: colorOne,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30),
@@ -155,7 +155,7 @@ class _MenuScreenState extends State<MenuScreen> {
                               width: 65,
                               height: 35,
                               decoration: BoxDecoration(
-                                color: colorLoro,
+                                color: colorTwo,
                                 borderRadius:
                                     BorderRadiusDirectional.circular(10),
                               ),
@@ -164,13 +164,13 @@ class _MenuScreenState extends State<MenuScreen> {
                                 children: [
                                   Icon(
                                     UniconsLine.shopping_cart,
-                                    color: colorSiji,
+                                    color: colorOne,
                                   ),
                                   SizedBox(width: 2),
                                   Text(
                                     '9',
                                     style: GoogleFonts.poppins(
-                                      color: colorSiji,
+                                      color: colorOne,
                                       fontSize: 20,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -194,7 +194,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         ),
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: colorSijiSetengah,
+                          fillColor: colorOneHalf,
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
                             borderSide: BorderSide.none,
@@ -610,7 +610,7 @@ class _MenuScreenState extends State<MenuScreen> {
 // Animate Navigate indextiga Hehe 
 Route NavIndexSatu() {
   return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => const IndexSatu(),
+    pageBuilder: (context, animation, secondaryAnimation) => const IndexOne(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       const begin = Offset(0.0, 0.5);
       const end = Offset.zero;

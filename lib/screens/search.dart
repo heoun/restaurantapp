@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:restaurant_app/pallete.dart';
+import 'package:restaurant_app/config/theme.dart';
 
-class ShopScreen extends StatelessWidget {
-  const ShopScreen({super.key});
+class SearchScreen extends StatelessWidget {
+  const SearchScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class ShopScreen extends StatelessWidget {
         'Shopping',
         style: GoogleFonts.poppins(
           fontSize: 33,
-          color: colorSiji,
+          color: colorOne,
           fontWeight: FontWeight.w400,
         ),
       ),

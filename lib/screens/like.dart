@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:restaurant_app/pallete.dart';
+import 'package:restaurant_app/config/theme.dart';
 
 class LikeScreen extends StatelessWidget {
   const LikeScreen({super.key});
@@ -14,7 +14,7 @@ class LikeScreen extends StatelessWidget {
         'Like',
         style: GoogleFonts.poppins(
           fontSize: 33,
-          color: colorSiji,
+          color: colorOne,
           fontWeight: FontWeight.w400,
         ),
       ),

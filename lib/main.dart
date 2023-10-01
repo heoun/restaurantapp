@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:restaurant_app/screens/root.dart';
+import 'package:restaurant_app/screens/navigation.dart';
 
 
 void main() {
